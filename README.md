@@ -12,7 +12,7 @@
 - Output: inference probability and predicted class
 - Model type: Binary Classification
 - Training set: 41127 compounds in the data set from MoleculeNet
-- Mode of training: No training was carried out; the model checkpoint fined tuned on HIV dataset have been provided by the authors.
+- Mode of training: No retraining was carried out; the model checkpoint fined tuned on HIV dataset have been provided by the authors.
 
 ## Source Code
 
