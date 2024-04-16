@@ -6,3 +6,4 @@ COPY . /repo
 
 RUN pip install rdkit-pypi
 RUN pip install torch torchaudio torchvision
+RUN conda install -c conda-forge xorg-libxrender xorg-libxtst
