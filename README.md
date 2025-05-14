@@ -41,7 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `44`
 - **Environment Size (Mb):** `8389`
+- **Image Size (Mb):** `8456.97`
 
+**Computational Performance (seconds):**
+- 10 inputs: `35.4`
+- 100 inputs: `36.67`
+- 10000 inputs: `1038.79`
 
 ### References
 - **Source Code**: [https://github.com/ChengF-Lab/ImageMol](https://github.com/ChengF-Lab/ImageMol)
