@@ -1,2 +1,2 @@
 name,type,direction,description
-prob,float,high,probability of inhibiting HIV replication
+prob_inh_hiv,float,high,probability of inhibiting HIV replication

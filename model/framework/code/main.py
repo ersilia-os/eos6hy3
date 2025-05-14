@@ -60,6 +60,6 @@ outputs = my_model(smiles_list)
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["prob"])  # header
+    writer.writerow(["prob_inh_hiv"])  # header
     for o in outputs:
-        writer.writerow(o)
+        writer.writerow([o])
