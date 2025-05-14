@@ -3,35 +3,46 @@
     "Slug": "image-mol-hiv",
     "Status": "Ready",
     "Title": "ImageMol HIV growth inhibition",
-    "Description": "TThis model has been developed using ImageMol, a deep learning model pretrained on 10 million unlabelled small molecules and fine-tuned in a second step to predict the inhibition of the human immunodeficiency virus (HIV). The HIV dataset is from MoleculeNet and contains 43850 small molecules and their in vitro activity against HIV (CA - Confirmed active, CM - Confirmed moderately active, CI - Confirmed inactive). The classification was based on EC50 values and expert knowledge.",
-    "Mode": "Pretrained",
-    "Task": [
-        "Classification"
-    ],
+    "Description": "This model has been developed using ImageMol, a deep learning model pretrained on 10 million unlabelled small molecules and fine-tuned in a second step to predict the inhibition of the human immunodeficiency virus (HIV). The HIV dataset is from MoleculeNet and contains 43850 small molecules and their in vitro activity against HIV (CA - Confirmed active, CM - Confirmed moderately active, CI - Confirmed inactive). The classification was based on EC50 values and expert knowledge.\n",
+    "Source": "Local",
+    "Source Type": "External",
     "Input": [
         "Compound"
     ],
-    "Input Shape": "Single",
+    "Input Dimension": 1,
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
+    "Biomedical Area": [
+        "AIDS"
+    ],
+    "Target Organism": [
+        "HIV"
+    ],
     "Output": [
         "Probability"
     ],
-    "Output Type": [
-        "Float"
-    ],
-    "Output Shape": "Single",
-    "Interpretation": "Probability of HIV inhibition. Active compounds are considered those classified as CA/CM.",
+    "Output Dimension": 1,
+    "Output Consistency": "Fixed",
+    "Interpretation": "Probability of inhibiting HIV replication",
     "Tag": [
         "HIV",
         "Antiviral activity",
         "MoleculeNet"
     ],
     "Publication": "https://www.nature.com/articles/s42256-022-00557-6",
+    "Publication Type": "Peer reviewed",
+    "Publication Year": 2022,
     "Source Code": "https://github.com/ChengF-Lab/ImageMol",
     "License": "MIT",
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6hy3.zip",
+    "Contributor": "DhanshreeA",
+    "Incorporation Date": "2023-01-17",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos6hy3",
     "Docker Architecture": [
         "AMD64",
         "ARM64"
+    ],
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6hy3.zip",
+    "Deployment": [
+        "Local"
     ]
 }
