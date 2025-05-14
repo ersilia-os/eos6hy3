@@ -2,7 +2,7 @@
 
 This model has been developed using ImageMol, a deep learning model pretrained on 10 million unlabelled small molecules and fine-tuned in a second step to predict the inhibition of the human immunodeficiency virus (HIV). The HIV dataset is from MoleculeNet and contains 43850 small molecules and their in vitro activity against HIV (CA - Confirmed active, CM - Confirmed moderately active, CI - Confirmed inactive). The classification was based on EC50 values and expert knowledge.
 
-This model was incorporated on 2023-01-17.
+This model was incorporated on 2023-01-11.
 
 ## Information
 ### Identifiers
@@ -39,6 +39,8 @@ Below are the **Output Columns** of the model:
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6hy3.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6hy3.zip)
 
 ### Resource Consumption
+- **Model Size (Mb):** `44`
+- **Environment Size (Mb):** `8389`
 
 
 ### References
