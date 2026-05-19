@@ -22,7 +22,6 @@
     "Output Consistency": "Fixed",
     "Interpretation": "Probability of inhibiting HIV replication",
     "Tag": [
-        "HIV",
         "Antiviral activity",
         "MoleculeNet"
     ],
