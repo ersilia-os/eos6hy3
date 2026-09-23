@@ -14,7 +14,7 @@ This model was incorporated on 2023-01-11.Last packaged on 2026-03-10.
 - **Subtask:** `Activity prediction`
 - **Biomedical Area:** `AIDS`
 - **Target Organism:** `HIV`
-- **Tags:** `HIV`, `Antiviral activity`, `MoleculeNet`
+- **Tags:** `Antiviral activity`, `MoleculeNet`
 
 ### Input
 - **Input:** `Compound`
