@@ -1,6 +1,6 @@
 # ImageMol HIV growth inhibition
 
-This model has been developed using ImageMol, a deep learning model pretrained on 10 million unlabelled small molecules and fine-tuned in a second step to predict the inhibition of the human immunodeficiency virus (HIV). The HIV dataset is from MoleculeNet and contains 43850 small molecules and their in vitro activity against HIV (CA - Confirmed active, CM - Confirmed moderately active, CI - Confirmed inactive). The classification was based on EC50 values and expert knowledge.
+Identifies compounds able to suppress replication of the human immunodeficiency virus in cell culture. Training used the MoleculeNet HIV set, 43,850 molecules whose screening outcomes were condensed from EC50 measurements and expert review into confirmed active, moderately active and inactive categories. The classifier is a fine-tuned ImageMol network, pretrained on 10 million unlabelled molecules by learning from images of chemical structures. Actives are a small minority of the set, so scores are calibrated against a heavily imbalanced screen.
 
 This model was incorporated on 2023-01-11.Last packaged on 2026-09-23.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-01-11.Last packaged on 2026-09-23.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of inhibiting HIV replication
+- **Interpretation:** Probability that the compound inhibits HIV replication in cell culture.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
