@@ -1,6 +1,6 @@
 # ImageMol HIV growth inhibition
 
-Identifies compounds able to suppress replication of the human immunodeficiency virus in cell culture. Training used the MoleculeNet HIV set, 43,850 molecules whose screening outcomes were condensed from EC50 measurements and expert review into confirmed active, moderately active and inactive categories. The classifier is a fine-tuned ImageMol network, pretrained on 10 million unlabelled molecules by learning from images of chemical structures. Actives are a small minority of the set, so scores are calibrated against a heavily imbalanced screen.
+Identifies compounds able to suppress replication of the human immunodeficiency virus in cell culture. Training used the MoleculeNet HIV set, over forty thousand molecules whose screening outcomes were condensed from EC50 measurements and expert review into confirmed active, moderately active and inactive categories, the first two counting as positives. The served weights are the authors' own fine-tuning of ImageMol, an encoder pretrained on ten million unlabelled molecules rendered as images. Actives are a small minority, so scores come from a heavily imbalanced screen.
 
 This model was incorporated on 2023-01-11.Last packaged on 2026-09-23.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-01-11.Last packaged on 2026-09-23.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability that the compound inhibits HIV replication in cell culture.
+- **Interpretation:** Probability of inhibiting HIV replication, with confirmed and moderately active screening outcomes both counted as active.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
