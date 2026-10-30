@@ -3,7 +3,7 @@
     "Slug": "image-mol-hiv",
     "Status": "Ready",
     "Title": "ImageMol HIV growth inhibition",
-    "Description": "Identifies compounds able to suppress replication of the human immunodeficiency virus in cell culture. Training used the MoleculeNet HIV set, over forty thousand molecules whose screening outcomes were condensed from EC50 measurements and expert review into confirmed active, moderately active and inactive categories, the first two counting as positives. The served weights are the authors' own fine-tuning of ImageMol, an encoder pretrained on ten million unlabelled molecules rendered as images. Actives are a small minority, so scores come from a heavily imbalanced screen.",
+    "Description": "Identifies compounds able to suppress replication of the human immunodeficiency virus in cell culture. Training used the MoleculeNet HIV set, over forty thousand molecules whose screening outcomes were condensed from EC50 measurements and expert review into confirmed active, moderately active and inactive categories, the first two counting as positives. The served weights are the authors own fine-tuning of ImageMol, an encoder pretrained on ten million unlabelled molecules rendered as images. Actives are a small minority, so scores come from a heavily imbalanced screen.",
     "Deployment": [
         "Local"
     ],
@@ -39,7 +39,7 @@
     "Contributor": "DhanshreeA",
     "Incorporation Date": "2023-01-11",
     "Last Packaging Date": "2026-09-23",
-    "Release": "v1.0.0",
+    "Release": "v1.1.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6hy3.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos6hy3",
     "Docker Architecture": [
