@@ -1,8 +1,9 @@
 # ImageMol HIV growth inhibition
 
-Identifies compounds able to suppress replication of the human immunodeficiency virus in cell culture. Training used the MoleculeNet HIV set, over forty thousand molecules whose screening outcomes were condensed from EC50 measurements and expert review into confirmed active, moderately active and inactive categories, the first two counting as positives. The served weights are the authors' own fine-tuning of ImageMol, an encoder pretrained on ten million unlabelled molecules rendered as images. Actives are a small minority, so scores come from a heavily imbalanced screen.
+Identifies compounds able to suppress replication of the human immunodeficiency virus in cell culture. Training used the MoleculeNet HIV set, over forty thousand molecules whose screening outcomes were condensed from EC50 measurements and expert review into confirmed active, moderately active and inactive categories, the first two counting as positives. The served weights are the authors own fine-tuning of ImageMol, an encoder pretrained on ten million unlabelled molecules rendered as images. Actives are a small minority, so scores come from a heavily imbalanced screen.
 
-This model was incorporated on 2023-01-11.Last packaged on 2026-09-23.
+This model was incorporated on 2023-01-11.
+Last packaged on 2026-09-23.
 
 ## Information
 ### Identifiers
@@ -37,6 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos6hy3](https://hub.docker.com/r/ersiliaos/eos6hy3)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6hy3.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6hy3.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos6hy3_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos6hy3_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `44`
